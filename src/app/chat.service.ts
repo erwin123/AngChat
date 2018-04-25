@@ -6,7 +6,6 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 import { Observable } from 'rxjs/Observable';
 import {ApiAiClient} from "api-ai-javascript";
 
-
 @Injectable()
 export class ChatService {
   readonly token = environment.dialogflow.angularBot;
