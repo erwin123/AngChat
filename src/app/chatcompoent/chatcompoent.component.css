@@ -1,0 +1,105 @@
+.chat-container{
+    height: 250px;
+    overflow:auto;
+    background:linear-gradient(to right, rgb(255, 255, 255) , rgb(233, 233, 233));
+    padding-bottom: 10px;
+    border: 1px #ccc solid;
+}
+
+.message:first-child{
+    margin-top:10px;
+}
+
+.message {
+    border-radius: 10px;
+    margin: 15px 5px 15px 5px;
+    padding: 15px 20px;
+    position: relative;
+    bottom: 0;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); 
+}
+.message-time{
+    font-size: 10px;
+    font-weight: normal;
+}
+.message.to {
+    background-color: #003665;
+    color: rgb(255, 208, 0);
+    margin-left: 100px;
+    text-align: right;
+}
+.message.from {
+    background-color: rgb(255, 208, 0);
+    color: #003665;
+    margin-right: 100px;
+}
+.message.to + .message.to,
+.message.from + .message.from {
+margin-top: -30px;
+}
+
+input{
+    font-weight: bold;
+    font-size: 12px;
+    font-weight: bold;
+    padding :5px;
+    width: 70%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #003665;
+    border-bottom: 1px solid #003665;
+}
+
+input:focus{
+    outline: none;
+}
+button{
+    border-radius: 5px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:#fff;
+    font-weight: bold;
+    padding :5px;
+    cursor: pointer;
+    background: #003665;
+    width: 25%;
+}
+
+.container-action{
+    border: #ccc 1px solid;
+    border-top: none;
+    padding:5px;
+    color:#003665;
+}
+
+label{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header-chat{
+    height: 60px;
+    border: #ccc 1px solid;
+    border-bottom: none;
+    background:linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 53%, rgba(217,0,0,1) 53% ,rgba(217,0,0,1) 55%, #fff 55%, rgba(255,255,255,1) 58%, rgb(255, 217, 0) 58%, rgb(255, 217, 0) 60%, #003665 60%, #003665 100%);
+}
+
+.header-chat div{
+    float: left;
+    width: 50%;
+}
+
+.header-title{
+    text-align: right;
+    padding-top:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#fff;
+}
+
+.container{
+    padding-bottom: 5px;
+}

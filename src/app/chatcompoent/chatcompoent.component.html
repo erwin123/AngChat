@@ -1,0 +1,20 @@
+<div class="container">
+  <!-- <div class="header-chat">
+    <div><img src="assets/mandiriutamafinance.jpg" alt=""/></div>
+    <div class="header-title">Helpcare &nbsp;</div>
+  </div> -->
+  <div class="chat-container"  #scrollMe>
+    <ng-container *ngFor="let message of messages | async">
+      <div class="message" [ngClass]="{ 'from': message.sentBy === 'bot',
+                                        'to':   message.sentBy === 'user' }">
+        <div class="message-time">{{message.time}}</div>
+        {{ message.content }}
+      </div>
+    </ng-container>
+  </div>
+  <div class="container-action">
+  <label for="nameField">Pesan Anda</label>
+  <input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
+  <button (click)="sendMessage()">Kirim</button>
+  </div>
+</div>
